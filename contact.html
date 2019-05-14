@@ -5,41 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Me</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/images/ursalogo.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header class="">
-        <div class="">
-            <div class=""> 
-                <h1>Mason Short</h1>
-            </div>
-            <ul class="">
-                <li class=""><a href="index.html">About</a></li>
-                <li class=""><a href="portfolio.html">Portfolio</a></li>
-                <li class=""><a class="active" href="contact.html">Contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-brand bg-success rounded p-2">
+            <h1>Mason Short</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item mr-2"><a class="btn btn-light" href="index.html">About</a></li>
+                <li class="navbar-item mr-2"><a class="btn btn-light" href="portfolio.html">Portfolio</a></li>
+                <li class="navbar-item active mr-2"><a class="btn btn-success" href="contact.html">Contact</a></li>
             </ul>
         </div>
-    </header>
-        
-    <section class="">
-        <h2>Contact Me</h2>
-        <form class="">
-            <h3>Name</h3>
-            <input name="name" type="text" autofocus>
-            <h3>Email Address:</h3>
-            <input name="emailaddress" type="email">
-            <h3>Message:</h3>
-            <textarea name="message"></textarea>
-            <br><input type="submit" value="Send">
+    </nav>
+                
+    <section class="container shadow p-0 mb-5">
+        <h2 class="card-header bg-dark text-light mt-3">Contact Me</h2>
+        <form class="m-3">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control w-25" id="name" type="text" placeholder="John Doe" autofocus>
+            </div>
+            <div class="form-group">
+                <label for="emailaddress">Email Address</label>
+                <input class="form-control w-25" id="emailaddress" type="email" placeholder="someone@somewhere.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control w-75" id="message"></textarea>
+            </div>
+            <br><input class="btn btn-success mb-3" type="submit" value="Send">
         </form>
     </section>
     
-    <footer>
-        <div></div>
-        <p>&copy; Mason Short 2019</p>
-    </footer>
-                            
+    <footer class="bg-dark fixed-bottom">
+            <div class="bg-success"></div>
+            <p class="bg-dark text-center text-white">&copy; Mason Short 2019</p>
+    </footer>  
+                              
 </body>
 </html>
